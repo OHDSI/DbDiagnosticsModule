@@ -18,7 +18,7 @@
 			"RemoteHost" : "api.github.com",
 			"RemoteRepo" : "Achilles",
 			"RemoteUsername" : "OHDSI",
-			"RemoteRef" : "HEAD",
+			"RemoteRef" : "a9144b2f3119055b76dfe8e9d798654558127fe3",
 			"RemoteSha" : "9613f2e7da01923f5cc84c619de087f3b39ed854",
 			"Hash" : "38f95be31724e41423a3359ecde2970d",
 			"Requirements" : [
@@ -43,7 +43,7 @@
 			"RemoteHost" : "api.github.com",
 			"RemoteRepo" : "Castor",
 			"RemoteUsername" : "OHDSI",
-			"RemoteRef" : "HEAD",
+			"RemoteRef" : "a64faf53509b50bfedf9057f042355fe2e17974b",
 			"RemoteSha" : "a64faf53509b50bfedf9057f042355fe2e17974b",
 			"Hash" : "e81bfbef4d6523e439d54a15bd6c096c",
 			"Requirements" : [
@@ -55,14 +55,14 @@
 		},
 		"CohortGenerator" : {
 			"Package" : "CohortGenerator",
-			"Version" : "0.7.0",
+			"Version" : "0.8.0",
 			"Source" : "GitHub",
 			"Remotes" : "ohdsi/CirceR, ohdsi/Eunomia, ohdsi/ROhdsiWebApi",
 			"RemoteType" : "github",
 			"RemoteHost" : "api.github.com",
 			"RemoteRepo" : "CohortGenerator",
 			"RemoteUsername" : "OHDSI",
-			"RemoteRef" : "v0.7.0",
+			"RemoteRef" : "v0.8.0",
 			"Requirements" : [
 				"DatabaseConnector",
 				"ParallelLogger",
@@ -87,14 +87,14 @@
 		},
 		"DataQualityDashboard" : {
 			"Package" : "DataQualityDashboard",
-			"Version" : "2.0.0",
+			"Version" : "2.1.2",
 			"Source" : "GitHub",
 			"Remotes" : "ohdsi/Eunomia",
 			"RemoteType" : "github",
 			"RemoteHost" : "api.github.com",
 			"RemoteRepo" : "DataQualityDashboard",
 			"RemoteUsername" : "OHDSI",
-			"RemoteRef" : "v2.0.0",
+			"RemoteRef" : "v2.1.2",
 			"Requirements" : [
 				"DatabaseConnector",
 				"ParallelLogger",
@@ -126,14 +126,14 @@
 		},
 		"DbDiagnostics" : {
 			"Package" : "DbDiagnostics",
-			"Version" : "0.1.1",
+			"Version" : "1.2",
 			"Source" : "GitHub",
 			"Remotes" : "ohdsi/Eunomia, ohdsi/Achilles, ohdsi/DataQualityDashboard",
 			"RemoteType" : "github",
 			"RemoteHost" : "api.github.com",
 			"RemoteRepo" : "DbDiagnostics",
-			"RemoteUsername" : "anthonysena",
-			"RemoteRef" : "078507032c343719b96ce9c949c2d4b9022da33b",
+			"RemoteUsername" : "ohdsi",
+			"RemoteRef" : "v1.2.0",
 			"Requirements" : [
 				"Achilles",
 				"CohortGenerator",
@@ -258,7 +258,7 @@
 		},
 		"SqlRender" : {
 			"Package" : "SqlRender",
-			"Version" : "1.10.0",
+			"Version" : "1.13.1",
 			"Source" : "Repository",
 			"Repository" : "CRAN",
 			"Hash" : "ce817a84681549f442cc4b240f2028aa",

@@ -39,7 +39,7 @@ execute <- function(jobContext) {
   DbDiagnostics::executeDbDiagnostics(
     connectionDetails       = jobContext$moduleExecutionSettings$resultsConnectionDetails, #this is here because I need to connect to the results database to get the dbProfile results
     resultsDatabaseSchema   = jobContext$moduleExecutionSettings$resultsDatabaseSchema,
-    resultsTableName        = "dp_achilles_results_augmented",
+    resultsTableName        = "db_profile_results",
     outputFolder            = resultsSubFolder,
     dataDiagnosticsSettings = jobContext$settings$dataDiagnosticsSettings
   )

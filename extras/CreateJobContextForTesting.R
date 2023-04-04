@@ -13,12 +13,34 @@ getModuleInfo <- function() {
 
 # Create DbDianosticsModule settings ---------------------------------------
 
-dbDiagnosticsSettings <- DbDiagnostics::createDataDiagnosticsSettings()
+dbDiagnosticsSettings1 <- DbDiagnostics::createDataDiagnosticsSettings(
+  analysisId = 1,
+  analysisName = "Eunomia Test",
+  minAge = 18,
+  maxAge = NA,
+  genderConceptIds = c(8532, 8507),
+  raceConceptIds = NA,
+  ethnicityConceptIds = NA,
+  studyStartDate = NA,
+  studyEndDate = NA,
+  requiredDurationDays = 365,
+  requiredDomains = c("condition","drug"),
+  desiredDomains = NA,
+  requiredVisits = NA,
+  desiredVisits = NA,
+  targetName = "Celecoxib",
+  targetConceptIds = c(1118084),
+  comparatorName = "Diclofenac",
+  comparatorConceptIds = c(1124300),
+  outcomeName = "GI Bleed",
+  outcomeConceptIds = c(192671),
+  indicationName = NA,
+  indicationConceptIds = NA
+)
+
+dbDiagnosticsSettings <- list(dbDiagnosticsSettings1)
 
 dbDiagnosticsModuleSpecifications <- createDbDiagnosticsModuleSpecifications(
-  # connectionDetails = "dummy",
-  # resultsDatabaseSchema = "dummy",
-  # resultsTableName = "dummyTable",
   dataDiagnosticsSettings = dbDiagnosticsSettings
 )
 
@@ -28,7 +50,7 @@ analysisSpecifications <- createEmptyAnalysisSpecificiations() %>%
 
 executionSettings <-   Strategus::createResultsExecutionSettings(
   resultsConnectionDetailsReference = "dummy",
-  resultsDatabaseSchema = "dummy",
+  resultsDatabaseSchema = "main",
   workFolder = "dummy",
   resultsFolder = "dummy",
   minCellCount = 5
